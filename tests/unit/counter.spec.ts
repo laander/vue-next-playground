@@ -1,10 +1,6 @@
-import { shallowMount } from '@vue/test-utils';
 import useCounter from '@/counter.ts';
 
 describe('Counter', () => {
-  beforeEach(() => {
-    jest.resetModules();
-  });
   it('initializes the counter', () => {
     const { counter } = useCounter();
     expect(counter.value).toBe(1);
